@@ -307,6 +307,7 @@ body.menu-open {
     box-shadow .2s ease,
     gap .2s ease,
     height .3s ease;
+    cursor: pointer;
 }
 
 .card:hover .card-content img, .card:focus-visible .card-content img {
@@ -320,6 +321,12 @@ body.menu-open {
 
 .card button, .card .read-more {
     transition: font-size 0.2s;
+}
+
+/* Enlarge button text when the parent card is hovered */
+.card:hover button,
+.card:hover .read-more {
+  font-size: 20px;
 }
 
 
@@ -582,6 +589,12 @@ body.menu-open {
   outline-offset: 2px;
 }
 
+/* Ensure the inner text of the question turns white when hovered or focused */
+.faq-question:hover .faq-left,
+.faq-question:focus-visible .faq-left {
+  color: #fff;
+}
+
 
 .faq-question {
     font-weight: 400;
@@ -697,6 +710,7 @@ body.menu-open {
     flex-direction: row;
     align-items: stretch;
     justify-content: space-between;
+    gap: 25px;
 
   }
 
@@ -705,6 +719,10 @@ body.menu-open {
     flex-direction: column;
     justify-content: space-between;
     color: #000000;
+  }
+
+  .message p{
+    text-align: justify;
   }
   
   /* Map */
