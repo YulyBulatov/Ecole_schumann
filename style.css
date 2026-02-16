@@ -25,7 +25,7 @@
   .school-logo { height: 32px; }
   .main-wrapper {
   max-width: 100%;
-  min-height: 100vh;
+  min-height: 100dvh;
   background: #fbfbfb;
   margin-left: auto;
   margin-right: auto;
@@ -119,8 +119,8 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100dvw;
+    height: 100dvh;
     background: #ffffff;
     z-index: 2000;
     padding: 0px 16px 200px 16px; /* extra top padding for logo & close */
@@ -644,6 +644,24 @@ body.menu-open {
   opacity: 1;
   padding: 0px 36px 24px 36px;
   transition: max-height 0.5s cubic-bezier(0.4,0,0.2,1), opacity 0.3s, padding 0.3s;
+}
+
+/* Mobile: remove margins from paragraphs inside FAQ answers for tighter layout */
+@media (max-width: 900px) {
+  .faq-answer p {
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+  .faq-answer li{
+    text-align: justify;
+  }
+  /* Make explicit spacing for <br> inside faq answers on mobile */
+  .faq-answer br {
+    display: block;
+    height: 10px;
+    line-height: 10px;
+  }
 }
 
 /* List styling in content blocks */
