@@ -5,11 +5,13 @@
   <title>École Internationale Robert Schuman</title> 
   <script>
     const userLang = navigator.language || navigator.userLanguage;
+    const repo = window.location.pathname.split('/')[1];
+    const root = `/${repo}`;
 
     if (userLang.startsWith("fr")) {
-      window.location.replace("/fr/index.html");
+      window.location.replace(`${root}/fr/index.html`);
     } else {
-      window.location.replace("/en/index.html");
+      window.location.replace(`${root}/en/index.html`);
     }
   </script>
 </head>
