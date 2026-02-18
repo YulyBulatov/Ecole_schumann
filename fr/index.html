@@ -760,13 +760,6 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   }
-  // Language switch redirects
-  const enBtn = document.getElementById('en');
-  const frBtn = document.getElementById('fr');
-  const repo = window.location.pathname.split('/')[1];
-  const root = `/${repo}`;
-  if (enBtn) enBtn.addEventListener('click', function() { window.location.replace(`${root}/en/index.html`); });
-  if (frBtn) frBtn.addEventListener('click', function() { window.location.replace(`${root}/fr/index.html`); });
   // Language toggle: Only show EN on mobile
   function handleLanguageToggle() {
     const enBtn = document.getElementById('en');
@@ -800,5 +793,6 @@ document.addEventListener('DOMContentLoaded', function() {
   restoreSectionsOnDesktop();
 });
 </script>
+  <script type="module" src="../scripts/lang-switch.js"></script>
 </body>
 </html>
