@@ -1035,11 +1035,15 @@ body.menu-open {
     font-weight: 400;
     }
 
-  .language-toggle button {
-    display: none;
-  }
 
   #en{
+    background-color: #f27405;
+    color: #fff;
+    font-size: 16px;
+    font-weight:500;
+    opacity: 100%;
+  }
+  #fr{
     background-color: #f27405;
     color: #fff;
     font-size: 16px;
