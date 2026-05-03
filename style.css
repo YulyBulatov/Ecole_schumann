@@ -910,14 +910,22 @@ body.menu-open {
 
   footer {
     background: #010A26;
-    color: #FBFBFB;
-    font-weight: 400;
-    font-size: 0.875rem;
     display:flex;
     justify-content: center;
     align-items: center;
     height: 62px;
+  }
+
+  footer p {
+    color: #FBFBFB;
+    font-weight: 400;
+    font-size: 0.875rem; 
     line-height: 150%;
+  }
+
+  footer a {
+    color: #FBFBFB;
+    text-decoration: none;
   }
 
   h5 {
@@ -926,6 +934,52 @@ body.menu-open {
     text-align: left;
   }
   
+  .terms-section {
+    margin-left: calc(var(--column-width) + 2 * var(--gutter));
+    margin-top: 86px;
+    display: flex;
+    flex-direction: column;
+    max-width: 555px;
+  }
+  .terms-section h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    color: #1E1E1E;
+  }
+
+  .terms-section h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: -0.03em;
+    color: #000000;
+  }
+
+  .terms-section p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    color: #1E1E1E;
+  }
+
+  .terms-section b{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    color: #1E1E1E;
+  }
 
   @media (max-width: 900px) {
   body {
@@ -952,7 +1006,7 @@ body.menu-open {
     width: 100%;
     max-width: 375px;
     min-width: 0;
-    background: #f8f6f4;
+    background: #fbfbfb;
     margin: 0 auto;
   }
 
@@ -1055,7 +1109,7 @@ body.menu-open {
     flex-direction: column;
     align-self: center;
     font-size: 16px;
-    margin-left: auto;
+    margin-left: 0;
     padding: 0.4em 1em;
     background: #F27405;
     font-weight: 500;
@@ -1188,7 +1242,7 @@ body.menu-open {
     align-self: center;
   }
   .faq-item.open .faq-answer{
-    padding: 0px 15px 0px 15px;
+    padding: 40px 15px 0px 15px;
   }
 
   .faq-answer p{
@@ -1231,7 +1285,6 @@ body.menu-open {
   html[lang='en'] .message{
     order:2;
     position: relative;
-    bottom: 280px
   }
   html[lang='fr'] .message{
     order:2;
@@ -1248,11 +1301,11 @@ body.menu-open {
     flex-direction: column;
     align-items: flex-start;
     margin: var(--mobile-margin);
-    margin-top: -220px;
     gap: 30px;
     position: relative;
     z-index: 3;
     background: #fbfbfb;
+    max-width: 335px;
   }
   .logos-school-website{
     flex-direction: column-reverse;
@@ -1265,11 +1318,61 @@ body.menu-open {
 
 
   footer{
+    height: 98px;
+  }
+  footer p{
     font-size: 12px;
-    padding: 20px;
+    padding: 19px;
     text-align: center;
   }
+  .terms-section{
+  margin: var(--mobile-margin);
+  max-width: 335px;
 }
+
+  .terms-section h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 120%;
+    
+    letter-spacing: -0.03em;
+    color: #000000;
+  }
+
+  .terms-section h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: -0.03em;
+    color: #000000;
+  }
+
+  .terms-section p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    color: #000000;
+  }
+
+  .terms-section b{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: -0.03em;  
+    color: #000000;
+  }
+}
+
+
 
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation: none !important; }
