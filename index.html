@@ -2,13 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>École Internationale Robert Schuman</title> 
-  <script type="module" src="./scripts/main.js"></script>
+  <title>École Internationale Robert Schuman</title>
+  <!-- Redirect based on browser language before any rendering -->
+  <script type="module" src="./scripts/core/redirect.js" defer></script>
+  <!-- Main application script (runs after redirect script) -->
+  <script type="module" src="./scripts/main.js" defer></script>
+  <style>
+    /* Hide body until redirect script runs */
+    body { display: none; }
+  </style>
 </head>
 <body>
-  <p>Redirecting...</p>
-    <noscript>
-      <p><a href="/fr/index.html">Aller à la version française</a> | <a href="/en/index.html">Go to the English version</a></p>
-    </noscript>
+  <noscript>
+    <p style="text-align:center; padding:20px;">
+      <a href="/fr/index.html">Aller à la version française</a> |
+      <a href="/en/index.html">Go to the English version</a>
+    </p>
+  </noscript>
+  <script>
+    // If script execution reaches this point, redirect failed.
+    // Show a manual fallback link.
+    document.body.style.display = 'flex';
+    document.body.style.justifyContent = 'center';
+    document.body.style.alignItems = 'center';
+    document.body.style.height = '100vh';
+    document.body.innerHTML = '<p>Redirect failed. <a href="/en/index.html">Click here to continue</a></p>';
+  </script>
 </body>
 </html>
