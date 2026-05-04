@@ -95,11 +95,14 @@ function initBurgerMenu() {
 
   mobileNav.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
-      mobileNav.style.display = 'none';
+      // Skip closing when the link triggers the visit popup (handled via data attribute)
+      if (link.hasAttribute('data-visit-trigger')) return;
+      mobileNav.classList.remove('open');
       document.body.classList.remove('menu-open');
       burger.setAttribute('aria-expanded', 'false');
     });
   });
+
 }
 
 export function initNavigationUI() {

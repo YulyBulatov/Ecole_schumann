@@ -20,7 +20,7 @@
     <img class="school-logo" src="../assets/Ecole_Internationale_Robert_Schuman.svg" alt="École Internationale Robert Schuman" />
   </a>
   <nav>
-    <a href="https://ec-internationale-schuman-strasbourg.site.ac-strasbourg.fr/comptes-rendus-des-conseils-decole/" target="_blank" rel="noopener noreferrer">Visit</a>
+    <a href="#" data-visit-trigger id="visit-link" rel="noopener noreferrer">Visit</a>
     <a href="https://ec-internationale-schuman-strasbourg.site.ac-strasbourg.fr/notre-ecole/admission/" target="_blank" rel="noopener noreferrer">Apply</a>
     <a href="https://ec-internationale-schuman-strasbourg.site.ac-strasbourg.fr/comptes-rendus-des-conseils-decole/" target="_blank" rel="noopener noreferrer">Contact</a>
   </nav>
@@ -44,10 +44,26 @@
   <button class="mobile-nav-close" aria-label="Close menu" type="button">
         <img src="../assets/X close menu.svg" alt="Close" />
       </button>
-      <a href="https://ec-internationale-schuman-strasbourg.site.ac-strasbourg.fr/comptes-rendus-des-conseils-decole/" target="_blank" rel="noopener noreferrer">Visit</a>
+      <a href="#" data-visit-trigger id="visit-link-mobile" rel="noopener noreferrer">Visit</a>
       <a href="https://ec-internationale-schuman-strasbourg.site.ac-strasbourg.fr/notre-ecole/admission/" target="_blank" rel="noopener noreferrer">Apply</a>
       <a href="https://ec-internationale-schuman-strasbourg.site.ac-strasbourg.fr/comptes-rendus-des-conseils-decole/" target="_blank" rel="noopener noreferrer">Contact</a>
     </div>
+        <!-- Visit Popup -->
+    <div id="visitPopup" class="visit-popup" role="dialog" aria-modal="true" aria-labelledby="popup-title" tabindex="-1">
+      <div class="visit-popup-content">
+        <button class="popup-close" aria-label="Close pop-up" id="popupClose">
+          <img src="../assets/X close menu.svg" alt="Close" />
+        </button>
+        <section class="popup-section">
+          <p>In line with <b>general practice in French public elementary schools, access to the  École Internationale Robert Schuman</b> is restricted during class hours, and casual visits are not possible, in order to ensure children’s safety and a calm learning environment. <br><br>
+          Tours for families are not offered, and teachers and the director are unavailable for individual visits during the school day, as staff focus on teaching.<br><br>
+          There are <b>no “Meet the Teacher Day” events</b> before the school year starts; children usually meet their class and teacher for the first time on the first day of school.<br><br>
+          If you need to meet with staff or discuss matters related to your child,<b> appointments must be arranged in advance </b>with the school office.<br><br>
+          All parents are required to <b>use designated entrances and check in with supervising staff</b>, in accordance with school safety rules.</p>
+        </section>
+      </div>
+    </div>
+
 </div>
 
     <div class="lower-header">
@@ -487,7 +503,7 @@
         <div class="links">
             <h5>Quick Links</h5>
             <div class="links-list">
-          <a href="https://ec-internationale-schuman-strasbourg.site.ac-strasbourg.fr/comptes-rendus-des-conseils-decole/" target="_blank" rel="noopener noreferrer">Visit</a>
+          <a href="#" data-visit-trigger id="visit-link" rel="noopener noreferrer">Visit</a>
           <a href="https://ec-internationale-schuman-strasbourg.site.ac-strasbourg.fr/notre-ecole/admission/" target="_blank" rel="noopener noreferrer">Apply</a>
           <a href="https://ec-internationale-schuman-strasbourg.site.ac-strasbourg.fr/comptes-rendus-des-conseils-decole/" target="_blank" rel="noopener noreferrer">Contact</a>
           <a href="https://www.fcpe.asso.fr/" target="_blank" rel="noopener noreferrer">About FCPE</a>  

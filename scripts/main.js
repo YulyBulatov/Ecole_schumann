@@ -4,11 +4,16 @@ import { initFAQ } from './ui/faq.js';
 import { initCards } from './ui/cards.js';
 import { initScrollTop } from './ui/scroll.js';
 import { applyDesktopWidths } from './layout/widths.js';
+import { initVisitPopup } from './ui/popup.js';
+
 
 function init() {
 
   // Navigation / header
   initNavigationUI();
+
+  // Visit popup
+  initVisitPopup();
 
   // Language switch buttons
   initLanguageSwitch();
